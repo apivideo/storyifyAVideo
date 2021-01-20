@@ -1,0 +1,33 @@
+body {background-color: lightgrey;
+    color:white;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+#action__upload{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+   
+    padding:10px;
+    font-size: xx-large;
+    color:black;
+   
+   
+  }
+  #hours{
+    font-size: xx-large;
+    background-color: gray;
+  }
+  #story{
+    font-size: xx-large;
+    background-color: gray;
+
+  }
+  #submitButton{
+    background-color: orange;
+    border-radius: 15px;
+    font-size: xx-large;
+  }
+ 

@@ -1,0 +1,58 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script>
+		var __nspid="isrtzw";
+		var __nsptags=[];
+		(function(w, d) { var x = function() {
+		var j=d.createElement("script");j.type="text/javascript";j.async=true;
+		j.src="http"+("https:"===d.location.protocol?"s://cs":"://c")+".ns1p.net/p.js?a="+__nspid;
+		d.body.appendChild(j); }
+		if(w.addEventListener) { w.addEventListener("load", x, false); }
+		else if(w.attachEvent) { w.attachEvent("onload", x); }
+		else { w.onload = x; }
+		}(window, document));
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9E9YP1HGF"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'G-N9E9YP1HGF');
+	</script>
+	<title>Create a video story app</title>
+</head>
+
+<body>
+	
+	<br>
+	<h1>Decide story category, and the how long a story will remain on the page</h1>
+	<div id="action__upload">
+		<form id="getVideo" action="/story" method="get">
+			<label for="story" >Choose the videos for your story: </label>
+			<select id="story" name="chooseStory">
+				<option value = "piLivestream">Livestream of a Park</option>
+				<option value = "foreheads">livestream.a.video recordings</option>
+				<option value = "tutorials">Videos describing a.video demos</option>
+			</select>
+			<br/>
+			<label for="hours" >Story lifetime (in hours):</label>
+			<input type="text" id="hours" name="hours" value="24"><br><br>
+			<br/>
+			<br/>
+			<input id="submitButton" type="submit">
+		</form>
+	</div>
+	<div id="footer">
+		This app was created with <a href="https://api.video">api.video</a>.<br/>
+		Get the <a href="https://github.com/dougsillars/resumeAVideo">sample code</a>, and read about <a href="https://a.video/works/resume-a-video">how we built the demo.</a><br/>
+		More sample apps can be found at <a href="https://a.video">a.video</a>.
+
+	</div>
+	
+	
+	
+</body>
+
+</html>
