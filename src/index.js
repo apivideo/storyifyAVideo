@@ -51,8 +51,7 @@ app.get('/story', (req, res) => {
 	//default will be the first choice pi livesream
 	var searchParameters = "currentPage: 1, pageSize: 25, sortBy: 'publishedAt', sortOrder: 'desc'";
 	if (videoStream==="piLivestream"){
-		// livestream a video saved videos
-		//"foreheads" is a joke - most of the thumbnails are of someone's forehead
+		// pi livestream saved videos
 		 searchParameters = {currentPage: 1, pageSize: 25, sortBy: 'publishedAt', sortOrder: 'desc', liveStreamId: 'liEJzHaTzuWTSWilgL0MSJ9'};
 	}
 	else if (videoStream==="foreheads"){
@@ -68,9 +67,7 @@ app.get('/story', (req, res) => {
 	}
 	//currentPage: 1, pageSize: 25, sortBy: 'publishedAt', sortOrder: 'desc', liveStreamId: 'liEJzHaTzuWTSWilgL0MSJ9'
 	console.log("search params", searchParameters);
-	let result =client.videos.search(searchParameters);
-	
-	
+	let result =client.videos.search(searchParameters);	
 	result.then(function(videoList){
 		//25 most recent stories
 		console.log(videoList);
