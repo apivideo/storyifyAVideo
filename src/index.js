@@ -81,7 +81,7 @@ app.get('/story', (req, res) => {
 				//any videos that match this are valid to display
 				//grab the title and the iframe url
 				console.log("published", publishDate);
-				var iframe = "iframe src=\""+videoList[i].assets.player+"\" width=\"50%\" height=\"25%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\true\"";
+				var iframe = "iframe src=\""+videoList[i].assets.player+"\" width=\"50%\" height=\"28%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\true\"";
 				var name = videoList[i].title;
 
 				var data = {
@@ -108,7 +108,7 @@ app.get('/story', (req, res) => {
 
 
 //testing on 3007
-app.listen(3007, () =>
+app.listen(process.env.PORT || 3007, () =>
   console.log('Example app listening on port 3007!'),
 );
 process.on('uncaughtException', function(err) {
